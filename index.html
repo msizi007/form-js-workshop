@@ -14,11 +14,12 @@
   </head>
   <body>
     <header></header>
-    <main id="root">
-      <form name="myForm" action="">
+    <main id="root" class="container m-1">
+      <form name="myForm" onsubmit="formControl.submitHandler()">
         <label for="num1">Enter a number: </label>
-        <input id="fname" name="num1" type="text" />
+        <input id="num1" name="num1" type="text" />
         <button type="submit">Calculate</button>
+        <button ty>Display Input</button>
       </form>
     </main>
     <footer></footer>
