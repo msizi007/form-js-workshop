@@ -1,11 +1,10 @@
 import NumberWork from "./numberWork.js";
 import FormControl from "./FormControl.js";
 
-const num1 = new NumberWork(5);
-const formControl = new FormControl(12);
-
-window.formControl = formControl;
-
+window.start = () => {
+  window.formControl = new FormControl();
+};
+window.start();
 // console.log(form);
 
 // form.addEventListener("submit", formControl.submitHandler());
