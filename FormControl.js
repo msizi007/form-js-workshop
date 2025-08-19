@@ -4,6 +4,10 @@ export default class FormControl {
   }
   submitHandler() {
     alert(`Form submitted sucessfully, the number is: ${this.num1}`);
+
     return false;
+  }
+  checkIsNotNumber() {
+    return isNaN(this.num1);
   }
 }

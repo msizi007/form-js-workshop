@@ -14,12 +14,15 @@
   </head>
   <body>
     <header></header>
-    <main id="root" class="container m-1">
-      <form name="myForm" onsubmit="formControl.submitHandler()">
-        <label for="num1">Enter a number: </label>
-        <input id="num1" name="num1" type="text" />
-        <button type="submit">Calculate</button>
-        <button type="submit">Display Input</button>
+    <main id="root" class="container m-5">
+      <form class="bg-light my-5" name="myForm" onsubmit="start(event)">
+        <label class="form-label my-2" for="num1">Enter a number: </label>
+        <input class="form-control my-2" id="num1" name="num1" type="text" />
+        <span id="nan" style="display: none">Not an number</span>
+        <button class="btn btn-primary my-2" type="submit">Calculate</button>
+        <button class="btn btn-secondary my-2" type="submit">
+          Display Input
+        </button>
       </form>
     </main>
     <footer></footer>
