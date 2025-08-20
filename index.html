@@ -13,17 +13,64 @@
     />
   </head>
   <body>
-    <header></header>
     <main id="root" class="container m-5">
-      <form class="bg-light my-5" name="myForm" onsubmit="start(event)">
-        <label class="form-label my-2" for="num1">Enter a number: </label>
-        <input class="form-control my-2" id="num1" name="num1" type="text" />
-        <span id="nan" style="display: none">Not an number</span>
-        <button class="btn btn-primary my-2" type="submit">Calculate</button>
-        <button class="btn btn-secondary my-2" type="submit">
-          Display Input
-        </button>
-      </form>
+      <section id="get-name">
+        <p>Hello</p>
+        <p>What is your name <input type="text" id="txtUsername" /></p>
+        <div id="btnSave" class="btn btn-outline-secondary">Save</div>
+      </section>
+      <span id="fill-form" style="display: none"
+        >Hello <span id="username"></span> <br />
+        Would you like to fill in a form? <br />
+        <div class="btn btn-secondary" id="yes-form">Yes</div>
+        <div class="btn btn-dark" id="no-form">No</div>
+      </span>
+      <span id="bye" class="text-center m-5" style="display: none"
+        >Thank You! Bye!</span
+      >
+      <section id="form-section" style="display: none">
+        <h1 class="text-center">form JS WorkShop</h1>
+
+        <form class="my-2 w-75" id="myForm" onsubmit="start(event)">
+          <div class="form-floating my-2">
+            <input
+              class="form-control"
+              id="num1"
+              name="num1"
+              type="text"
+              placeholder="num1.."
+            />
+            <label class="form-label" for="num1">Enter a number</label>
+          </div>
+          <span
+            class="d-block alert alert-danger"
+            id="alert-number"
+            style="visibility: hidden; padding: 0"
+          ></span>
+          <div class="form-floating">
+            <input
+              class="form-control"
+              id="email"
+              name="email"
+              type="text"
+              placeholder="email.."
+            />
+            <label class="form-label" for="email">Enter an email</label>
+          </div>
+          <span
+            class="d-block alert alert-danger"
+            id="alert-email"
+            style="visibility: hidden; padding: 0"
+          ></span>
+          <button class="btn btn-primary my-2" type="submit">Submit</button>
+          <button class="btn btn-secondary my-2" type="submit">Display</button>
+          <span
+            class="d-block alert alert-success"
+            id="alert-success"
+            style="visibility: hidden"
+          ></span>
+        </form>
+      </section>
     </main>
     <footer></footer>
     <script type="module" src="app.js"></script>

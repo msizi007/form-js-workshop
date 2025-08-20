@@ -12,11 +12,15 @@ main {
   justify-content: center;
   align-items: center;
 }
-form {
-  width: 50%;
+main {
+  height: max-content;
   display: flex;
   flex-direction: column;
   border: 2px solid gray;
   border-radius: 1rem;
   padding: 2rem;
+}
+#bye {
+  font-size: 3rem;
+  font-weight: 500;
 }
