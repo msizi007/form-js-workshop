@@ -1,11 +1,6 @@
 import NumberWork from "./numberWork.js";
 import FormControl from "./FormControl.js";
 
-console.log("Hi");
-console.warn("Hi");
-console.info("Hi");
-console.error("Hi");
-
 let getName = document.getElementById("get-name");
 let fillForm = document.getElementById("fill-form");
 
@@ -45,6 +40,7 @@ btnSave.addEventListener("click", () => {
 
 // welcome form
 let welcomeForm = document.getElementById("welcome-form");
+
 
 yesForm.addEventListener("click", () => {
   fillForm.style.display = "none";
